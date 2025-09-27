@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+body {
+  min-height: 100vh;
+
+  background-color: #ffd33a;
+  opacity: 0.8;
+  background: repeating-linear-gradient(
+    45deg,
+    #444cf7,
+    #444cf7 5px,
+    #ffd33a 5px,
+    #ffd33a 25px
+  );
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; /* مهم */
+  padding: 20px;
+}
+#left,
+#right {
+  width: 300px;
+  max-width: 500px;
+  flex: 1 1 300px;
+  min-height: 400px;
+  margin: 20px;
+  border: dashed 4px #ffd33a;
+  background-color: #444cf7;
+  box-shadow: #444cf7 0px 0px 20px 0px;
+  border-radius: 12px;
+  padding: 10px;
+  overflow-y: auto;
+  align-items: space-between;
+}
+.list {
+  height: 60px;
+  margin: 20px;
+  background: rgba(255, 255, 255, 0.71);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #444cf7;
+  cursor: grab;
+  user-select: none;
+  transition: 0.2s;
+}
+.list img {
+  width: 30px;
+  margin-right: 15px;
+  user-select: none;
+  pointer-events: none;
+  background: transparent;
+}
+.list:active {
+  cursor: grabbing;
+  transform: scale(0.98);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+.list.dragging {
+  opacity: 0.5;
+}
+#left.dragover,
+#right.dragover {
+  border-color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+#left::-webkit-scrollbar,
+#right::-webkit-scrollbar {
+  width: 6px;
+}
+#left::-webkit-scrollbar-thumb,
+#right::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #left,
+  #right {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .list {
+    font-size: 16px;
+    height: auto;
+    padding: 15px;
+  }
+}

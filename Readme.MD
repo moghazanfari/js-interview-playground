@@ -27,6 +27,8 @@ A sophisticated weather application featuring glassmorphism design and real-time
 - Error handling and validation
 - Geolocation support
 
+---
+
 ### 2. 📱 QR Code Generator
 
 **Tech Stack:** JavaScript, CSS3, HTML5, QRServer API
@@ -37,3 +39,20 @@ Simple QR code generator using QRServer.com API.
 
 - Generate QR codes from text/URL
 - Instant preview
+
+---
+
+### 3. 🎲 Drag & Drop List App
+
+**Tech Stack:** Vanilla JavaScript, HTML5, CSS3 (Flexbox)
+
+An interactive drag-and-drop application where users can move list items between two containers.  
+This project demonstrates DOM manipulation, drag events, and responsive design techniques.
+
+**Features:**
+
+- Drag & drop between two containers
+- Glassmorphism-inspired UI design
+- Responsive layout with flexbox and media queries
+- Visual feedback on drop targets
+- Smooth animations and transitions
