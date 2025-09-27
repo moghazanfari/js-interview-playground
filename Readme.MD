@@ -1,6 +1,5 @@
 # 🚀 JavaScript Interview Projects Collection
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
@@ -27,3 +26,14 @@ A sophisticated weather application featuring glassmorphism design and real-time
 - Smooth animations and transitions
 - Error handling and validation
 - Geolocation support
+
+### 2. 📱 QR Code Generator
+
+**Tech Stack:** JavaScript, CSS3, HTML5, QRServer API
+
+Simple QR code generator using QRServer.com API.
+
+**Features:**
+
+- Generate QR codes from text/URL
+- Instant preview
